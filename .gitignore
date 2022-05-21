@@ -16,8 +16,13 @@
 *.o
 *.cxx
 *.so
+*.dll
+*.pyproj
+*.vcxproj
+*.pydevproject
+*.project
 
-
+.idea/
 .vs/
 __pycache__/
 output/

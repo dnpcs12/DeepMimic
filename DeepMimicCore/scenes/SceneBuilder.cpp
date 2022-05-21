@@ -17,6 +17,10 @@
 #include "SceneStrikeAMP.h"
 #include "DrawSceneHeadingAMPGetup.h"
 #include "SceneHeadingAMPGetup.h"
+#include "cSceneKickBallAMP.h"
+#include "DrawSceneKickBallAMP.h"
+#include "SceneDribbleAMPGetup.h"
+#include "DrawSceneDribbleAMPGetup.h"
 
 void cSceneBuilder::BuildScene(const std::string& scene_name, std::shared_ptr<cScene>& out_scene)
 {
@@ -56,6 +60,14 @@ void cSceneBuilder::BuildScene(const std::string& scene_name, std::shared_ptr<cS
 	else if (scene_name == "heading_amp_getup")
 	{
 		out_scene = std::shared_ptr<cSceneHeadingAMPGetup>(new cSceneHeadingAMPGetup());
+	}
+	else if (scene_name == "kick_ball_amp")
+	{
+		out_scene = std::shared_ptr<cSceneKickBallAMP>(new cSceneKickBallAMP());
+	}
+	else if (scene_name == "dribble_amp_getup")
+	{
+		out_scene = std::shared_ptr<cSceneDribbleAMPGetup>(new cSceneDribbleAMPGetup());
 	}
 	else
 	{
@@ -102,6 +114,14 @@ void cSceneBuilder::BuildDrawScene(const std::string& scene_name, std::shared_pt
 	else if (scene_name == "heading_amp_getup")
 	{
 		out_scene = std::shared_ptr<cDrawSceneHeadingAMPGetup>(new cDrawSceneHeadingAMPGetup());
+	}
+	else if (scene_name == "kick_ball_amp")
+	{
+		out_scene = std::shared_ptr<cDrawSceneKickBallAMP>(new cDrawSceneKickBallAMP());
+	}
+	else if ()
+	{
+		out_scene = std::shared_ptr<cDrawSceneDribbleAMPGetup>(new cDrawSceneDribbleAMPGetup());
 	}
 	else
 	{

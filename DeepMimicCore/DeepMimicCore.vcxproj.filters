@@ -353,6 +353,12 @@
     <ClCompile Include="scenes\DrawSceneHeadingAMPGetup.cpp">
       <Filter>Source Files\scenes</Filter>
     </ClCompile>
+    <ClCompile Include="scenes\cSceneKickBallAMP.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\DrawSceneKickBall.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="util\CircularBuffer.h">
@@ -710,6 +716,12 @@
       <Filter>Source Files\scenes</Filter>
     </ClInclude>
     <ClInclude Include="scenes\DrawSceneHeadingAMPGetup.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\cSceneKickBallAMP.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\DrawSceneKickBallAMP.h">
       <Filter>Source Files\scenes</Filter>
     </ClInclude>
   </ItemGroup>
